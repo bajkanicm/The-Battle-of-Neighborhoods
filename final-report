@@ -1,0 +1,39 @@
+The Battle of Neighborhoods in Novi Sad by Zoran Kocevski
+
+Business Problem: In the city Novi Sad in Serbia, if someone is looking to open a restaurant/gym/spa, 
+where would you recommend that they open it? 
+
+Data: We will use a csv file with list of all areas in Novi Sad and their coordinates which help us to use 
+Foursquare. We generated this csv file using data from Wikipedia.
+
+Explanation of work flow: 
+- Download all the dependencies that we will need.
+- Tranform the data into a pandas dataframe
+- Define Foursquare Credentials and Version
+- Create a function to repeat the same process to all the neighborhoods in Novi Sad
+- Create a new dataframe called df_venues filled using the above function on each neighborhood
+- Analyze Each Neighborhood
+- Group rows by neighborhood and by taking the mean of the frequency of occurrence of each category
+- Create the new dataframe and display the top 10 venues for each neighborhood
+- Cluster Neighborhoods using 5 as number of clusters and methodology K-means
+- Visualize the resulting clusters
+
+Results: You can find as part of Examine Clusters in notebook
+
+Recommendation: 
+- If someone is looking to open a restaurant the best areas are: Salajka and Grbavica
+- If someone is looking to open a spa the best areas are all except Adamovicevo Naselje
+- If someone is looking to open a gym the best areas are all except Stari Grad
+
+Conclusion:
+This is a report with small of number input paramaters. If we would like to create a better report we should include 
+more input parameters like budget of specific area, population for specific area, infrastructure of specific area and so on.
+
+
+
+
+
+
+
+
+
